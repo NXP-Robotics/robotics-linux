@@ -1153,6 +1153,7 @@ dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-5inch.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-7inch.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-10inch.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-lt8912b.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sja1110a.dtbo
 
 # Pre-fused convenience DTBs for the common module combinations. These also
 # make the kernel build validate that each overlay applies to the base.
