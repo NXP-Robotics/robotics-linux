@@ -1134,7 +1134,6 @@ DTC_FLAGS_imx95-19x19-verdin-rpmsg := -@
 dtb-$(CONFIG_ARCH_MXC) += imx95-19x19-verdin-rpmsg.dtb
 
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb.dtb
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sja1110-bin.dtb
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sfp.dtb
 
 # NavQ-B swappable camera / display modules (device-tree overlays).
