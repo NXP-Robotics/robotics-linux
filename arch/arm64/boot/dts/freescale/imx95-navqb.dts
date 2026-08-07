@@ -471,26 +471,26 @@
 
 		m2_keyb_fcpo_b: m2-keyb-fcpo-b {
 			gpio-hog;
-			gpios = <4 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
-			output-low;
+			gpios = <4 GPIO_OPEN_DRAIN>;
+			output-high;
 		};
 
 		m2_keyb_reset_b: m2-keyb-reset-b {
 			gpio-hog;
-			gpios = <5 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
-			output-low;
+			gpios = <5 GPIO_OPEN_DRAIN>;
+			output-high;
 		};
 
 		m2_keyb_wdisable1_b: m2-keyb-wdisable1-b {
 			gpio-hog;
-			gpios = <6 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
-			output-low;
+			gpios = <6 GPIO_OPEN_DRAIN>;
+			output-high;
 		};
 
 		m2_keyb_wdisable2_b: m2-keyb-wdisable2-b {
 			gpio-hog;
-			gpios = <7 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
-			output-low;
+			gpios = <7 GPIO_OPEN_DRAIN>;
+			output-high;
 		};
 
 		m2_keym_pedet: m2-keym-pedet {
