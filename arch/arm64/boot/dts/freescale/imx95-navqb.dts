@@ -221,7 +221,8 @@
 		regulator-max-microvolt = <3300000>;
 		gpio = <&i2c3_ioexp23 2 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
 		enable-active-low;
-		regulator-always-on;
+		off-on-delay-us = <100000>;
+		startup-delay-us = <500000>;
 	};
 
 	reg_vana: regulator-2p8v {
