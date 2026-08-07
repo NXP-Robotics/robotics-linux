@@ -318,8 +318,8 @@ static const struct mhi_channel_config modem_qcom_v1_mhi_channels[] = {
 	MHI_CHANNEL_CONFIG_DL_FP(35, "FIREHOSE", 32, 0),
 	MHI_CHANNEL_CONFIG_UL(46, "IP_SW0", 64, 2),
 	MHI_CHANNEL_CONFIG_DL(47, "IP_SW0", 64, 3),
-	MHI_CHANNEL_CONFIG_HW_UL(100, "IP_HW0", 128, 4),
-	MHI_CHANNEL_CONFIG_HW_DL(101, "IP_HW0", 128, 5),
+	MHI_CHANNEL_CONFIG_HW_UL(100, "IP_HW0_MBIM", 128, 4),
+	MHI_CHANNEL_CONFIG_HW_DL(101, "IP_HW0_MBIM", 128, 5),
 };
 
 static struct mhi_event_config modem_qcom_v1_mhi_events[] = {
