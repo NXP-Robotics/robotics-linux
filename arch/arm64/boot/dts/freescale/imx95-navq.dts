@@ -968,7 +968,7 @@
 	pinctrl-0 = <&pinctrl_pcie0>;
 	pinctrl-names = "default";
 	vpcie-supply = <&reg_pcie0>;
-	status = "okay";
+	status = "disabled";
 };
 
 &pcie1 {
@@ -985,7 +985,7 @@
 	pinctrl-names = "default";
 	fsl,refclk-pad-mode = <IMX8_PCIE_REFCLK_PAD_OUTPUT>;
 	vpcie-supply = <&reg_pcie1>;
-	status = "okay";
+	status = "disabled";
 };
 
 &dpu {
