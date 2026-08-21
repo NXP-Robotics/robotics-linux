@@ -3,7 +3,7 @@
  * Copyright 2026 NXP
  */
 
-#include "imx95-navqb.dts"
+#include "imx95-navq.dts"
 
 / {
 	sfp0: sfp-0 {

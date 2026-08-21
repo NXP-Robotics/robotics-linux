@@ -1133,27 +1133,27 @@ dtb-$(CONFIG_ARCH_MXC) += imx95-19x19-verdin.dtb
 DTC_FLAGS_imx95-19x19-verdin-rpmsg := -@
 dtb-$(CONFIG_ARCH_MXC) += imx95-19x19-verdin-rpmsg.dtb
 
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb.dtb
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sfp.dtb
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq.dtb
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-sfp.dtb
 
 # NavQ-B swappable camera / display modules (device-tree overlays).
 # Named after the physical board-to-board connectors:
 #   csi_b2b    = port A, CSI-only connector          (SoC CSI0)
 #   dsicsi_b2b = port B, DSI/CSI combo connector      (SoC CSI1 or DSI)
-DTC_FLAGS_imx95-navqb := -@
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-csi_b2b-imx219.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-csi_b2b-imx477.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-csi_b2b-imx708.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-csi_b2b-os08a20.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-imx219.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-imx477.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-imx708.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-os08a20.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-5inch.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-7inch.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-10inch.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-lt8912b.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sja1110a.dtbo
+DTC_FLAGS_imx95-navq := -@
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-csi-imx219.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-csi-imx477.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-csi-imx708.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-csi-os08a20.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-imx219.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-imx477.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-imx708.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-os08a20.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-disp-5inch.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-disp-7inch.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-disp-10inch.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-dsicsi-lt8912b.dtbo
+dtb-$(CONFIG_ARCH_MXC) += imx95-navq-sja1110a.dtbo
 
 imx95-19x19-verdin-adv7535-dtbs := imx95-19x19-verdin.dtb imx95-19x19-verdin-adv7535.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-19x19-verdin-adv7535.dtb
