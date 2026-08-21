@@ -46,7 +46,7 @@
 	};
 };
 
-#include "imx95-navqb-csi1-pipeline.dtsi"
+#include "imx95-navq-csi1-pipeline.dtsi"
 
 /* OS08A20 uses all 4 lanes; override the pipeline's 2-lane default. */
 &mipi_csi1_ep {
