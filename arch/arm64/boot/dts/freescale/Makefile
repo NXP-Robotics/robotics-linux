@@ -1155,15 +1155,6 @@ dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-disp-10inch.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-dsicsi_b2b-lt8912b.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-sja1110a.dtbo
 
-# Pre-fused convenience DTBs for the common module combinations. These also
-# make the kernel build validate that each overlay applies to the base.
-imx95-navqb-2x-imx219-dtbs := imx95-navqb.dtb \
-	imx95-navqb-csi_b2b-imx219.dtbo imx95-navqb-dsicsi_b2b-imx219.dtbo
-imx95-navqb-imx219-7inch-dtbs := imx95-navqb.dtb \
-	imx95-navqb-csi_b2b-imx219.dtbo imx95-navqb-dsicsi_b2b-disp-7inch.dtbo
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-2x-imx219.dtb
-dtb-$(CONFIG_ARCH_MXC) += imx95-navqb-imx219-7inch.dtb
-
 imx95-19x19-verdin-adv7535-dtbs := imx95-19x19-verdin.dtb imx95-19x19-verdin-adv7535.dtbo
 dtb-$(CONFIG_ARCH_MXC) += imx95-19x19-verdin-adv7535.dtb
 
