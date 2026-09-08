@@ -17,6 +17,7 @@
 
 	cam1_imx477: imx477@1a {
 		compatible = "sony,imx477";
+		csi_id = <0x01>;
 		reg = <0x1a>;
 		clocks = <&cam24m>;
 		/* CAM2 reset (XCLR) on P3H TP7 SCL line */
@@ -33,7 +34,7 @@
 				data-lanes = <1 2>;
 				clock-lanes = <0>;
 				clock-noncontinous;
-				link-frequencies = /bits/ 64 <450000000>;
+				link-frequencies = /bits/ 64 <456000000>;
 			};
 		};
 	};
