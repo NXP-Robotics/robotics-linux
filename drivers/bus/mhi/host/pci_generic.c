@@ -472,6 +472,25 @@ static const struct mhi_pci_dev_info mhi_quectel_rm5xx_info = {
 	.sideband_wake = true,
 };
 
+/*
+ * Quectel RM520N-EU: sdx65-based, QCOM vendor ID (17cb:0308), subsystem 17cb:5201.
+ * M3 sleep state is disabled (no_m3=true) for two reasons:
+ *   1. When the modem enters M3, the PCIe link goes down completely.
+ *   2. Waking it back up requires an out-of-band signal sent by the System
+ *      Manager (SM) firmware via SCMI -- this path is not implemented yet.
+ * For simplicity, M3 is disabled entirely until SM-based wake support is added.
+ */
+static const struct mhi_pci_dev_info mhi_quectel_rm520n_eu_info = {
+	.name = "quectel-rm520n-eu",
+	.edl = "qcom/prog_firehose_sdx6x.elf",
+	.config = &modem_quectel_em1xx_config,
+	.bar_num = MHI_PCI_DEFAULT_BAR_NUM,
+	.dma_data_width = 32,
+	.mru_default = 32768,
+	.sideband_wake = true,
+	.no_m3 = true,
+};
+
 static const struct mhi_channel_config mhi_foxconn_sdx55_channels[] = {
 	MHI_CHANNEL_CONFIG_UL(0, "LOOPBACK", 32, 0),
 	MHI_CHANNEL_CONFIG_DL(1, "LOOPBACK", 32, 0),
@@ -924,6 +943,9 @@ static const struct pci_device_id mhi_pci_id_table[] = {
 	/* Foxconn T99W696, all variants */
 	{ PCI_DEVICE_SUB(PCI_VENDOR_ID_QCOM, 0x0308, PCI_VENDOR_ID_FOXCONN, PCI_ANY_ID),
 		.driver_data = (kernel_ulong_t) &mhi_foxconn_t99w696_info },
+	/* Quectel RM520N-EU (sdx65, QCOM subsystem VID 17cb:5201) */
+	{ PCI_DEVICE_SUB(PCI_VENDOR_ID_QCOM, 0x0308, PCI_VENDOR_ID_QCOM, 0x5201),
+		.driver_data = (kernel_ulong_t) &mhi_quectel_rm520n_eu_info },
 	{ PCI_DEVICE(PCI_VENDOR_ID_QCOM, 0x0308),
 		.driver_data = (kernel_ulong_t) &mhi_qcom_sdx65_info },
 	/* Telit FN990B40 (sdx72) */
